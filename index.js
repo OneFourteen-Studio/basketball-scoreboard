@@ -10,55 +10,43 @@ let guestScore = 0
 function homeAddOne () {
   homeScore += 1
   home.textContent = homeScore
-  if(homeScore > guestScore) {
-    leader()
-  }
+  leader()
 
 }
 
 function homeAddTwo () {
     homeScore += 2
     home.textContent = homeScore
-    if(homeScore > guestScore) {
-        leader()
-    }
-    
+    leader()
+
 }
 
 function homeAddThree () {
     homeScore += 3
     home.textContent = homeScore
-    if(homeScore > guestScore) {
-        leader()
-    }
-    
+    leader()
+
 }
 
 function guestAddOne () {
     guestScore += 1 
     guest.textContent = guestScore
-    if(guestScore > homeScore) {
-        leader()
-    }
-    
+    leader()
+
 }
 
 function guestAddTwo () {
     guestScore += 2
     guest.textContent = guestScore
-    if(guestScore > homeScore) {
-        leader()
-    }
-    
+    leader()
+
 }
 
 function guestAddThree () {
     guestScore += 3
     guest.textContent = guestScore
-    if(guestScore > homeScore) {
-        leader()
-    }
-    
+    leader()
+
 }
 
 function newGame () {
@@ -67,17 +55,13 @@ function newGame () {
 
     home.textContent = homeScore
     guest.textContent = guestScore
-    
-    homeContainer.style.boxShadow = "none"
-    guestContainer.style.boxShadow = "none"
-
 }
 
 function leader () {
     if(homeScore > guestScore) {
-        homeContainer.style.boxShadow = "10px 10px 10px 10px white"
+        homeContainer.style.boxShadow = "0 0  10px 20px white"
     } else if (guestScore > homeScore) {
-        guestContainer.style.boxShadow = "10px 10px 10px 10px black"
+        guestContainer.style.boxShadow = "0 0 10px 20px white"
     } else {
         homeContainer.style.boxShadow = "none"
         guestContainer.style.boxShadow = "none"
